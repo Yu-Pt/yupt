@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int d, L;
+	int pi = 3.14;
+	cin >> d;
+	L = pi * d;
+	cout << "L=" << L;
+	return 0;
+}
