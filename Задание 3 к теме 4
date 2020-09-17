@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double a, b;
+	double A;
+	cin >> a >> b;
+	A = (a + b) / 2;
+	cout << A;
+	return 0;
+}
