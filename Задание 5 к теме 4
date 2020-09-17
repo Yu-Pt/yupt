@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double a, b;
+	double S, R, P, D;
+	cin >> a >> b;
+	S = abs(a) + abs(b);
+	R = abs(a) - abs(b);
+	P = abs(a) * abs(b);
+	D = abs(a) / abs(b);
+	cout << "|a| + |b| = " << S << endl;
+	cout << "|a| - |b| = " << R << endl;
+	cout << "|a| * |b| = " << P << endl;
+	cout << "|a| / |b| = " << D;
+	return 0;
+}
