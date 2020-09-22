@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    double A, B, C, AC, BC, S;
+    cin >> A >> B >> C;
+    AC = abs(A-C);
+    BC = abs(B-C);
+    S = AC+BC;
+    cout << "AC=" << AC << endl;
+    cout << "BC=" << BC << endl;
+    cout << "AC+BC=" << S;
+    return 0;
+}
