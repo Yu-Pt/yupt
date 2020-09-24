@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int A, B, C, t;
+	cin >> A >> B >> C;
+	cout << "A=" << A << endl;
+	cout << "B=" << B << endl;
+	cout << "C=" << C << endl;
+	t = A;
+	A = B;
+	B = C;
+	C = t;
+	cout << "Now:" << endl;
+	cout << "A=" << A << endl;
+	cout << "B=" << B << endl;
+	cout << "C=" << C << endl;
+}
