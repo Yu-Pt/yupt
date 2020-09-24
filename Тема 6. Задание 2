@@ -8,9 +8,9 @@ int main()
 	cout << "B=" << B << endl;
 	cout << "C=" << C << endl;
 	t = A;
-	A = B;
-	B = C;
-	C = t;
+	A = C;
+	C = B;
+	B = t;
 	cout << "Now:" << endl;
 	cout << "A=" << A << endl;
 	cout << "B=" << B << endl;
