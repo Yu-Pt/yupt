@@ -1,0 +1,11 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int A, p, R;
+	cin >> A;
+	p = pow(A, 2);
+	R = p * p * p * p;
+	cout << "A^8=" << R;
+}
