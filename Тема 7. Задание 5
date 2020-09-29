@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double A, x, B;
+	cout << "A*x + B = 0" << endl;
+	cout << "Enter A and B" << endl;
+	cin >> A >> B;
+	x = (0 - B) / A;
+	cout << "x = " << x;
+	return 0;
+}
