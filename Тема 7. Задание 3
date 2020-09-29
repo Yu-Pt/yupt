@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double X, A, Y, e, ey;
+	cout << "Enter the weight (kg)" << endl;
+	cin >> X;
+	cout << "Enter the price" << endl;
+	cin >> A;
+	cout << X << " kg of candy cost " << A << " rubles" << endl;
+	e = A / X;
+	cout << "1 kg costs " << e << " rubles" << endl;
+	cout << "Enter the new weight (kg)" << endl;
+	cin >> Y;
+	ey = Y * e;
+	cout << Y << " kg cost " << ey << " rubles";
+	return 0;
+}
