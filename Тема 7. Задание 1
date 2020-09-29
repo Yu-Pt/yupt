@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double a, c=180, a1;
+	cin >> a;
+	a1 = a / c;
+	cout << "a = " << a << " degree = " << a1 << "pi";
+	return 0;
+}
