@@ -1,9 +1,0 @@
-#include <iostream>
-using namespace std;
-int main()
-{
-	int a, r;
-	cin >> a;
-	r = a / 1024;
-	cout << r;
-}
