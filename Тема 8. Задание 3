@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int A, B, r, n;
+	cin >> A >> B;
+	r = A/B;
+	n = A - B * r;
+	cout << n;
+}
