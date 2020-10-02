@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int N, n, p;
+	cin >> N;
+	p = N / 60;
+	n = N - p * 60;
+	cout << n;
+  return 0;
+}
