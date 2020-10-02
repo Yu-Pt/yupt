@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x, d1, d2, y; 
+	cin >> x; 
+	d2 = x%100;
+	d1 = x/100;
+	y = d2 * 10 + d1;
+	cout << y;
+}
