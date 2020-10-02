@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int A, B, a, b, C, z, n;
+	cin >> A >> B >> C;
+	a = A / C;
+	b = B / C;
+	z = a * b;
+	n = A * B - z*C*C;
+	cout << "Number of squares:" << z << endl;
+	cout << "Unoccupied area:" << n;
+	return 0;
+}
