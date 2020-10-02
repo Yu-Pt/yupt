@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int K, N, k, n, a;
+	cin >> K >> N;
+	n = N%7;
+	a = 7 - n + 1;
+	k = (K- a) % 7;
+	if (k == 0)
+		cout << 7;
+	else
+		cout << k;
+	return 0;
+}
