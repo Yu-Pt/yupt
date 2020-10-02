@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int Y, C, p;
+	cin >> Y;
+	p = Y % 100;
+	C = (Y - p) / 100 + 1;
+	cout << C;
+	return 0;
+}
