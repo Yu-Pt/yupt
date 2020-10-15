@@ -1,0 +1,21 @@
+#include <iostream>
+#include <clocale>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int A, a1, a2, a3, a4, B;
+	cout << "Введите четырехзначное число" << endl;
+	cin >> A;
+	cout << "Справедливо ли, что данное число читается одинаково слева направо и справа налево?" << endl;
+	a4 = A % 10;
+	a3 = (A % 100)/10;
+	a2 = (A % 1000)/100;
+	a1 = (A % 10000) / 1000;
+	B = a4 * 1000 + a3 * 100 + a2 * 10 + a1;
+	if (A==B)
+		cout << "Да";
+	else
+        cout << "Нет";
+	return 0;
+}
