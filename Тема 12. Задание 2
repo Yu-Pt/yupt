@@ -1,0 +1,28 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	char C;
+	int N;
+	cout << "Введите исходное напраление и нажмите U(если Юг), S(если Север), V(если Восток) или Z(если Запад)" << endl;
+	cin >> C;
+	cout << "Введите 0, 1 или -1" << endl;
+	cin >> N;
+	if (C == 'U' && N == 0) cout << "Юг";
+	if (C == 'S' && N == 0) cout << "Север";
+	if (C == 'V' && N == 0) cout << "Восток";
+	if (C == 'Z' && N == 0) cout << "Запад";
+	if (C == 'U' && N == 1) cout << "Восток";
+	if (C == 'S' && N == 1) cout << "Запад";
+	if (C == 'V' && N == 1) cout << "Север";
+	if (C == 'Z' && N == 1) cout << "Юг";
+	if (C == 'U' && N == -1) cout << "Запад";
+	if (C == 'S' && N == -1) cout << "Восток";
+	if (C == 'V' && N == -1) cout << "Юг";
+	if (C == 'Z' && N == -1) cout << "Север";
+	return 0;
+}
