@@ -1,0 +1,24 @@
+#include <iostream>
+#include <clocale>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int A, a1, a2, a3;
+	cout << "Введите трехзначное число А" << endl;
+	cin >> A;
+	cout << "Справедливо ли, цифры данного числа образуют возрастающую или убывающую последовательность?" << endl;
+	a3 = A % 10;
+	a2 = (A % 100)/10;
+	a1 = (A % 1000)/100;
+	if (a1 > a2 && a2 > a3)
+		cout << "Да";
+	else
+	{
+		if (a1 < a2 && a2 < a3)
+			cout << "Да";
+		else
+			cout << "Нет";
+	}
+	return 0;
+}
