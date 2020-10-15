@@ -1,0 +1,31 @@
+#include <iostream>
+#include <clocale>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, c, n, S;
+	cin >> a >> b >> c;
+	n = a;
+	if (b > n)
+		n = b;
+	if (c > n)
+		n = c;
+	if (n == a)
+	   {if (b >= c)
+			S = n + b;
+		else
+			S = n + c;}
+	if (n == b)
+	   {if (a >= c)
+			S = n + a;
+		else
+			S = n + c;}
+	if (n == c)
+	    {if (b >= a)
+			S = n + b;
+		else
+			S = n + a;}
+	cout << "S=" << S;
+	return 0;
+}
