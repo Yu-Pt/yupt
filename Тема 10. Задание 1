@@ -1,0 +1,16 @@
+#include <iostream>
+#include <clocale>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int A, B;
+	cout << "Введите A и B" << endl;
+	cin >> A >> B;
+	cout << "Справедливы ли неравенства A > 2 и B <= 3?" << endl;
+	if (A > 2 && B <= 3)
+		cout << "Да";
+	else
+		cout << "Нет";
+	return 0;
+}
