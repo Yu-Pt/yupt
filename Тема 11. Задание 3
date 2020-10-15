@@ -1,0 +1,28 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int xa, xb, xc, ya, yb, yc, ab, ac;
+	double AB, AC;
+	cout << "Введите координаты точек A, B и C" << endl;
+	cin >> xa >> ya >> xb >> yb >> xc >> yc;
+	cout << "A(" << xa << ";" << ya << ")" << endl;
+	cout << "B(" << xb << ";" << yb << ")" << endl;
+	cout << "C(" << xc << ";" << yc << ")" << endl;
+	ab = (xb - xa) * (xb - xa) + (yb - ya) * (yb - ya);
+	AB = sqrt(ab);
+	ac = (xc - xa) * (xc - xa) + (yc - ya) * (yc - ya);
+	AC = sqrt(ac);
+	if (AB < AC)
+		cout << "B" << " Расстояние от А до Б: " << AB;
+	else
+	   {if (AC < AB)
+			cout << "C" << " Расстояние от А до С: " << AC;
+		else
+			cout << "Расстояния от А до Б и от А до С равны между собой. Их значение: " << AB;}
+	return 0;
+}
