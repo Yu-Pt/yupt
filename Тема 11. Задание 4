@@ -1,0 +1,22 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int xa, ya;
+	cout << "Введите координаты точки А" << endl;
+	cin >> xa >> ya;
+	cout << "A(" << xa << ";" << ya << ")" << endl;
+	if (xa > 0 && ya > 0)
+		cout << "Первая четверть";
+	if (xa > 0 && ya < 0)
+		cout << "Четвертая четверть";
+	if (xa < 0 && ya < 0)
+		cout << "Третья четверть";
+	if (xa < 0 && ya > 0)
+		cout << "Вторая четверть";
+	return 0;
+}
