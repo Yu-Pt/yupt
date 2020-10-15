@@ -1,0 +1,23 @@
+#include <iostream>
+#include <clocale>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, c;
+	cout << "Введите числa a, b и c" << endl;
+	cin >> a >> b >> c;
+	cout << "Справедливо ли, что треугольник со сторонами a, b, c является прямоугольным?" << endl;
+	if (c*c==a*a+b*b)
+		cout << "Да";
+	else
+	    {if (b * b == c * c + a * a)
+			cout << "Да";
+	     else
+		    {if (a * a == b * b + c * c)
+				cout << "Да";
+			else
+				cout << "Нет";}
+	}
+	return 0;
+}
