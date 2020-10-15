@@ -1,0 +1,16 @@
+#include <iostream>
+#include <clocale>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int A;
+	cout << "Введите число А" << endl;
+	cin >> A;
+	cout << "Справедливо ли, что А - двузначное четное?" << endl;
+	if (A>9 && A<100 && A%2==0)
+		cout << "Да";
+	else
+		cout << "Нет";
+	return 0;
+}
