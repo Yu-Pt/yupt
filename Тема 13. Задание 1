@@ -1,0 +1,20 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, i;
+	float j;
+	float m[11] = { 0 };
+	cin >> N;
+	for (i = 1; i < 11; i++)
+	{
+		j = i;
+		m[i] = N * (j / 10);
+		cout << m[i] << endl;
+	}
+	return 0;
+}
