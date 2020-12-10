@@ -1,0 +1,20 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, F=0, K=2, i=1, j=0;
+	cin >> N;
+	while (F != N)
+	{
+		K++;
+		F = j + i;
+		j = i;
+		i = F;
+	}
+	cout << K;
+	return 0;
+}
