@@ -1,0 +1,39 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+float Fact2(int N) {
+	float R=1;
+	int i;
+	cin >> N;
+	if (N % 2 == 0)
+	{
+		i = 2;
+		while (i <= N)
+		{
+			R = i * R;
+			i = i + 2;
+		}
+	}
+	if (N % 2 != 0)
+	{
+		i = 1;
+		while (i <= N)
+		{
+			R = i * R;
+			i = i + 2;
+		}
+	}
+	return R;
+}
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N = 0;
+	cout << "Двойнной факториал: " << Fact2(N) << endl;
+	cout << "Двойнной факториал: " << Fact2(N) << endl;
+	cout << "Двойнной факториал: " << Fact2(N) << endl;
+	return 0;
+}
