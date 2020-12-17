@@ -1,0 +1,27 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+using namespace std;
+
+int Quarter(float x, float y) {
+	cin >> x >> y;
+	cout << "Четверть точки с координатами (" << x << ";" << y << "): ";
+	if (x > 0 && y > 0)
+		return 1;
+	if (x < 0 && y > 0)
+		return 2;
+	if (x < 0 && y < 0)
+		return 3;
+	if (x > 0 && y < 0)
+		return 4;
+}
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float x = 0, y = 0;
+	cout << Quarter(x, y) << endl;
+	cout << Quarter(x, y) << endl;
+	cout << Quarter(x, y) << endl;
+	return 0;
+}
