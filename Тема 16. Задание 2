@@ -1,0 +1,26 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, i, A, D;
+	cout << "Введите размер массива" << endl;
+	cin >> N;
+	cout << "Введите первый член прогрессии" << endl;
+	cin >> A;
+	cout << "Введите знаменатель прогрессии" << endl;
+	cin >> D;
+	vector<int> m(N);
+	for (i = 0; i < N; i++)
+	{
+		m[i] = A * pow(D, i);
+	}
+	cout << "Полученная геометрическая прогрессия:" << endl;
+	for (i = 0; i < N; i++)
+		cout << m[i] << endl;
+	return 0;
+}
