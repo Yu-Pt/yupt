@@ -1,0 +1,28 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, i, A, B;
+	cout << "Введите размер массива" << endl;
+	cin >> N;
+	cout << "Введите первый элемент массива" << endl;
+	cin >> A;
+	cout << "Введите второй элемент массива" << endl;
+	cin >> B;
+	vector<int> m(N);
+	m[0] = A;
+	m[1] = B;
+	for (i = 2; i < N; i++)
+	{
+		m[i] = m[i-1] + m[i-2];
+	}
+	cout << "Полученный массив:" << endl;
+	for (i = 0; i < N; i++)
+		cout << m[i] << endl;
+	return 0;
+}
