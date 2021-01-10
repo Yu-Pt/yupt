@@ -8,7 +8,6 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int N, t, i;
-	float s = 0, z = 0, r;
 	cout << "Введите размер массивов" << endl;
 	cin >> N;
 	vector<int> A(N);
