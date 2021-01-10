@@ -1,0 +1,34 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, i;
+	float s, z;
+	cout << "Введите размер массивов" << endl;
+	cin >> N;
+	vector<int> A(N);
+	vector<float> B(N);
+	cout << "Введите элементы массива A" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cin >> A[i];
+	}
+	s = A[0];
+	z = 1;
+	cout << "Массив B:" << endl;
+	for (i = 0; i < N-1; i++)
+	{
+		B[i] = s / z;
+		cout << B[i] << endl;
+		s = s + A[i + 1];
+		z++;
+	}
+	B[N - 1] = s / z;
+	cout << B[N - 1];
+	return 0;
+}
