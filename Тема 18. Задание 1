@@ -1,0 +1,43 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, t, i;
+	float s = 0, z = 0, r;
+	cout << "Введите размер массивов" << endl;
+	cin >> N;
+	vector<int> A(N);
+	vector<int> B(N);
+	cout << "Введите элементы массива A" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cin >> A[i];
+	}
+	cout << "Введите элементы массива B" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cin >> B[i];
+	}
+	for (i = 0; i < N; i++)
+	{
+		t = A[i];
+		A[i] = B[i];
+		B[i] = t;
+	}
+	cout << "Элементы преобразованного массива A:" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cout << A[i] << endl;
+	}
+	cout << "Элементы преобразованного массива B:" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cout << B[i] << endl;
+	}
+	return 0;
+}
