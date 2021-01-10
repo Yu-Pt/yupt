@@ -1,0 +1,30 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int K, L, N, i;
+	float s=0, z=0, r;
+	cout << "Введите размер массива" << endl;
+	cin >> N;
+	vector<int> m(N);
+	cout << "Введите K и L так, что 1 <= K <= L <= N" << endl;
+	cin >> K >> L;
+	cout << "Введите элементы массива" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cin >> m[i];
+	}
+	for (i = K; i <= L; i++)
+	{
+		z++;
+		s = s + m[i];
+	}
+	r = s / z;
+	cout << "Результат: " << r;
+	return 0;
+}
