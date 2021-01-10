@@ -1,0 +1,27 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, i, min;
+	cout << "Введите размер массива" << endl;
+	cin >> N;
+	vector<int> m(N);
+	cout << "Введите элементы массива" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cin >> m[i];
+	}
+	min = m[2];
+	for (i = 4; i < N; i = i + 2)
+	{
+		if (m[i] < min)
+			min = m[i];
+	}
+	cout << "Результат: " << min;
+	return 0;
+}
