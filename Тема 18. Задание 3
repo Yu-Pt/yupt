@@ -1,0 +1,32 @@
+#include <iostream>
+#include <clocale>
+#include <math.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int N, i, k=0;
+	cout << "Введите размер массива" << endl;
+	cin >> N;
+	vector<int> A(N);
+	cout << "Введите элементы массива A" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cin >> A[i];
+	}
+	i = N - 1;
+	while (A[i] % 2 == 0 && i != 0)
+	{
+		i--;
+	}
+	if (A[i] % 2 != 0) k = A[i];
+	cout << "Преобразованный массив A:" << endl;
+	for (i = 0; i < N; i++)
+	{
+		if (A[i] % 2 != 0) A[i] = A[i] + k;
+		cout << A[i] << endl;
+	}
+	return 0;
+}
